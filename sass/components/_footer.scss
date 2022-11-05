@@ -1,0 +1,71 @@
+.footer {
+  background-color: $background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.position-footer {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.address-container {
+  width: 231px;
+}
+
+.address-container__logo-ftr {
+  margin-bottom: 20px;
+}
+
+.address-container__logo-ftr--part {
+  color: $hero-text-color;
+  font-family: "Raleway", sans-serif;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list {
+  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.address-list__item {
+  margin-bottom: 9px;
+
+&:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.address-list__link {
+  height: 21px;
+}
+
+.address-list__link--map {
+  color: $hero-text-color;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.address-list__contacts {
+  color: $text-color;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <nav class="main-nav">
+          <a href="./index.html" class="main-nav__logo link"
+            >Web<span class="main-nav__logo--part">Studio</span></a
+          >
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="link site-nav__link">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="link site-nav__link site-nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="link site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts-nav main-nav list">
+          <li class="contacts-nav__item">
+            <a href="mailto:info@devstudio.com" class="link contacts-nav__link"
+              ><svg class="contacts-nav__icon" width="16" height="12">
+                <use
+                  href="./img/icons.svg#icon-envelope"
+                  width="16"
+                  height="12"
+                ></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-nav__item">
+            <a href="tel:+380961111111" class="link contacts-nav__link"
+              ><svg class="contacts-nav__icon" width="10" height="16">
+                <use href="./img/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container works">
+          <h1 class="works__title works__title--visually-hidden">
+            Filter menu
+          </h1>
+          <ul class="button-list list">
+            <li class="button-list__item">
+              <button
+                type="button"
+                class="button-list__button button-list__button--first"
+              >
+                Усi
+              </button>
+            </li>
+            <li class="button-list__item">
+              <button type="button" class="button-list__button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="button-list__item">
+              <button type="button" class="button-list__button">Додатки</button>
+            </li>
+            <li class="button-list__item">
+              <button type="button" class="button-list__button">Дизайн</button>
+            </li>
+            <li class="button-list__item">
+              <button type="button" class="button-list__button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+
+          <ul class="works-list list">
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-11.jpg"
+                    alt="Відкритий сайт у браузері на екрані ноутбука"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 class="work-card__title">Технокряк</h2>
+                  <p class="work-card__item">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-12.jpg"
+                    alt="Два баскетболісти змагаються за мʼяч"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 class="work-card__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="work-card__item">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-13.jpg"
+                    alt="Назва ресторану ʼЗе сифуд ресторанʼ з великою рибою на фоні"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 class="work-card__title">Ресторан Seafood</h2>
+                  <p class="work-card__item">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-14.jpg"
+                    alt="Чорні навушники"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 class="work-card__title">Проект Prime</h2>
+                  <p class="work-card__item">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-15.jpg"
+                    alt="Дві коробки- біла та коричнева"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 class="work-card__title">Проект Boxes</h2>
+                  <p class="work-card__item">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-16.jpg"
+                    alt="Персональний компʼютер Епл з відкритою сторінкою у браузері"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 lang="en" class="work-card__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="work-card__item">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-17.jpg"
+                    alt="Відкритий журнал, на першій сторінці дівчина з феном, на другій дві дівчини підняли руки вгору зі знаком перемоги ві"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 class="work-card__title">Видання Limited Edition</h2>
+                  <p class="work-card__item">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-18.jpg"
+                    alt="Бірка з надписом 'Леб ель тег'"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 class="work-card__title">Проект LAB</h2>
+                  <p class="work-card__item">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="works-list__element">
+              <a href="" class="works-list__link"
+                ><div class="thumb-portfolio">
+                  <img
+                    src="./img/img-19.jpg"
+                    alt="Чоловічі руки печатають на клавіатурі ноутбука з відкритою сторінкою у браузері"
+                    width="370"
+                  />
+                  <div class="thumb-overflow">
+                    <p class="thumb-overflow__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aperiam ad aut quibusdam recusandae. Nobis culpa itaque
+                      atque tempora mollitia sit ad aperiam.
+                    </p>
+                  </div>
+                </div>
+                <div class="work-card">
+                  <h2 lang="en" class="work-card__title">Growing Business</h2>
+                  <p class="work-card__item">Додаток</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="position-footer">
+          <div class="address-container">
+            <a href="./index.html" class="logo address-container__logo-ftr link"
+              >Web<span class="address-container__logo-ftr--part"
+                >Studio</span
+              ></a
+            >
+
+            <address class="address">
+              <ul class="list address-list">
+                <li class="address-list__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address-list__link address-list__link--map link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+
+                <li class="address-list__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="address-list__contacts address-list__link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+
+                <li class="address-list__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="address-list__contacts address-list__link link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="social-footer">
+            <p class="social-footer__title">Приєднуйтесь</p>
+            <ul class="list icons-ftr">
+              <li>
+                <a href="" class="icons-ftr__link">
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-instagram2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="icons-ftr__link">
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="icons-ftr__link">
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="icons-ftr__link">
+                  <svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-footer">
+            <p class="form-footer__title">Підпишіться на розсилку</p>
+
+            <form class="follow-container">
+              <label for="follow-email"
+                ><input
+                  type="email"
+                  name="follow_email"
+                  id="follow-email"
+                  placeholder="E-mail"
+                  class="follow-container__input"
+              /></label>
+              <button type="submit" class="button follow-container__button">
+                Підписатися<svg
+                  width="24"
+                  height="24"
+                  class="follow-container__icon"
+                >
+                  <use href="./img/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+.backdrop {
+  position: fixed;
+  background-color: $backdrop;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+  transform-origin: bottom;
+  transition-property: visibility, transform, opacity;
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  pointer-events: none;
+  transition-property: visibility, transform, opacity;
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
+}

@@ -1,0 +1,27 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.clients-list__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid $social-icons-fill;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $social-icons-fill;
+  transition-property: fill, border-color;
+  transition-duration:$transition-dur;
+  transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
+

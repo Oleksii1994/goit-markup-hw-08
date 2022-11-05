@@ -1,0 +1,42 @@
+.form-footer {
+  margin-left: auto;
+}
+
+.form-footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $hero-text-color;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.follow-container {
+  display: flex;
+  gap: 12px;
+}
+
+.follow-container__input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: $hero-text-color;
+  background-color: $background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.follow-container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.follow-container__icon {
+  fill: $body-bgr-color;
+}

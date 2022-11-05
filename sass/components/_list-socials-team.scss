@@ -1,0 +1,25 @@
+.list-socials {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.list-socials__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $social-icons-fill;
+  transition-property: fill, background-color;
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
+
+&:hover,
+  &:focus {
+    fill: $body-bgr-color;
+    background-color: $accent-color;
+  }
+}
+
