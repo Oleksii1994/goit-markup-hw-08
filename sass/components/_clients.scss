@@ -1,8 +1,17 @@
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 0;
   margin: 0;
+
+  @media screen  and (max-width:767px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
 }
 
 .clients-list__link {
@@ -23,5 +32,9 @@
     fill: $accent-color;
     border-color: $accent-color;
   }
+
+    @media screen  and (max-width: 767px) {
+    width: 210px;
+    }
 }
 

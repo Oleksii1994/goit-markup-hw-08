@@ -3,7 +3,17 @@
   margin-left: auto;
   padding: 0;
   display: flex;
+  align-items: center;
+
 }
+
+@media screen  and (max-width:767px){
+  .contacts-nav {
+    display: none;
+  }
+}
+
+
 
 .contacts-nav__link {
   padding-top: 32px;

@@ -1,0 +1,143 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  
+  
+  
+
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: $accent-color;
+}
+
+.menu-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: space-between;
+  top: 0;
+  left: 0;
+  // width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $body-bgr-color;
+  z-index: 5;
+
+  opacity: 0;
+  transform: translateX(100%);
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic-bezier;
+}
+
+.menu-container.is-open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+}
+
+.menu-nav {
+  margin: 0;
+  margin-bottom: auto;
+  padding: 0;
+}
+
+.menu-nav__item {
+  margin-bottom: 36px;
+}
+
+.menu-nav__link {
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  // text-align: center;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: $transition-dur;
+  transition-timing-function: $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-nav__link--current {
+  color: $accent-color;
+}
+
+.contacts-menu {
+  margin: 0;
+  margin-bottom: 64px;
+  padding: 0;
+}
+
+.contacts-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contacts-menu__link--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.contacts-menu__link--email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: $text-color;
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-socials__link {
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &--last {
+    border: none;
+  }
+}

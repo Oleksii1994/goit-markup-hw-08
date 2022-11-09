@@ -22,15 +22,24 @@
 }
 
 .features {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  // display: flex;
+  // justify-content: space-between;
+  // gap: 30px;
   padding: 0;
   margin: 0;
 }
 
 .features__item {
   width: 270px;
+
+  @media screen  and (max-width:767px) {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
 }
 
 .features__icon {
@@ -42,6 +51,10 @@
   margin-bottom: 30px;
   background-color: $team-bgr-color;
   border-radius: 4px;
+
+  @media screen  and (max-width:767px) {
+width: 450px;
+  }
 }
 
 .features__text {
@@ -52,10 +65,16 @@
 }
 
 .features__title {
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen  and (max-width:767px) {
+   text-align: center;
+    
+  }
 }
 
 .features__title,

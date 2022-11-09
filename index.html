@@ -42,9 +42,111 @@
               <a href="./" class="link site-nav__link">Контакти</a>
             </li>
           </ul>
+
+          <div class="menu-btn-container">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg width="40" height="40">
+                <use href="./img/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="menu-container container js-menu-container"
+            id="mobile-menu"
+          >
+            <ul class="menu-nav list">
+              <li class="menu-nav__item">
+                <a
+                  href="./index.html"
+                  class="link menu-nav__link menu-nav__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="menu-nav__item">
+                <a href="./portfolio.html" class="link menu-nav__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="menu-nav__item">
+                <a href="./" class="link menu-nav__link">Контакти</a>
+              </li>
+            </ul>
+            <button class="menu-toggle js-close-menu">
+              <svg width="40" height="40">
+                <use href="./img/icons.svg#menu-close"></use>
+              </svg>
+            </button>
+
+            <ul class="contacts-menu list">
+              <li class="contacts-menu__item">
+                <a
+                  href="tel:+380961111111"
+                  class="link contacts-menu__link contacts-menu__link--tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-menu__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="link contacts-menu__link contacts-menu__link--email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="list mobile-socials">
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link link">Instagram</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link link">Twitter</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link link">Facebook</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href=""
+                  class="mobile-socials__link mobile-socials__link--last link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="menu-btn-container">
+            <button
+              type="button"
+              class="mobile-menu-btn is-open"
+              aria-expanded="false"
+              js-menu-container
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use
+                  href="./img/icons.svg#icon-menu"
+                  class="icon-menu"
+                  js-open-menu
+                ></use>
+                <use
+                href="./img/icons.svg#menu-close"
+                class="icon-cross"
+                js-close-menu
+              ></use> -->
+          <!-- </svg>
+            </button>
+          </div> -->
         </nav>
 
-        <ul class="contacts-nav main-nav list">
+        <ul class="contacts-nav list">
           <li class="contacts-nav__item">
             <a href="mailto:info@devstudio.com" class="link contacts-nav__link"
               ><svg class="contacts-nav__icon" width="16" height="12">
@@ -119,7 +221,7 @@
               </p>
             </li>
 
-            <li class="features__item">
+            <li class="features__item features__item--last">
               <div class="features__icon">
                 <svg width="70" height="70">
                   <use href="./img/icons.svg#icon-astronaut1"></use>
@@ -303,7 +405,7 @@
               </div>
             </li>
 
-            <li class="team-list__item">
+            <li class="team-list__item team-list__item--last">
               <img
                 src="./img/img-4.jpg"
                 alt="чоловік в окулярах с темним волоссям і бородою, вдягнений в чорну футболку трохи посміхається"
@@ -613,5 +715,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

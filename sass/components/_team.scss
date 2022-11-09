@@ -1,15 +1,21 @@
 .team {
   background-color: $team-bgr-color;
   margin-bottom: 0;
+
+  @media screen  and (max-width: 767px) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .team-list {
   margin: 0;
   padding-left: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 30px;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // gap: 30px;
 }
 
 .team-list__item {
@@ -18,10 +24,25 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen  and (max-width: 767px) {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+
+.team-list__item--last {
+  @media screen  and (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 
 .team-container {
   padding: 30px 32px;
+
+  @media screen  and (max-width: 767px) {
+    padding: 30px  24px;
+  }
 }
 
 .team-container__title {
@@ -30,6 +51,11 @@
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media screen  and (max-width: 767px) {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .team-container__job-title {
@@ -41,4 +67,8 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 28px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
 }
