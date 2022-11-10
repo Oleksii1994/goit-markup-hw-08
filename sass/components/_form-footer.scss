@@ -3,6 +3,14 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
 }
 
 .form-footer__title {
@@ -20,13 +28,16 @@
   // display: flex;
   // gap: 12px;
 
-  @media screen  and (max-width: 767px) {
-
+@media screen and (min-width:768px) and (max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
   }
 }
 
 .follow-container__input {
-  padding-left: 16px;
+  padding:2px 0 2px 16px;
   width: 358px;
   height: 50px;
   color: $hero-text-color;
@@ -38,6 +49,11 @@
   @media screen  and (max-width: 767px) {
     margin-bottom: 20px;
   }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      width: 450px;
+      
+    }
 }
 
 .follow-container__button {
@@ -51,6 +67,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      width: 200px;
+      margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .follow-container__icon {
