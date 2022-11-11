@@ -34,6 +34,13 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+     @media screen and (min-width:1200px) {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+
+     }
 }
 
 .features__item {

@@ -2,15 +2,8 @@
   display: flex;
   // justify-content: space-between;
   padding: 0;
+gap:10px;justify-content: center;
 
-  @media screen  and (max-width:767px) {
-    gap: 10px;
-    justify-content: center;
-  }
-
-     @media screen and (min-width:768px) and (max-width:1199px) {
-       gap:10px;
-     }
 }
 
 .list-socials__link {

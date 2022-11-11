@@ -1,20 +1,24 @@
 .team {
   background-color: $team-bgr-color;
   margin-bottom: 0;
-
-  @media screen  and (max-width: 767px) {
-    width: 480px;
-    margin-left: auto;
+  margin-left: auto;
     margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    
   }
 
-    @media screen and (min-width:767px) and (max-width:1199px) {
-      
-      width: 768px;
-      margin-left: auto;
-        margin-right: auto;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    width: 768px;
+    
+  }
 
-    }
+  @media screen and (min-width: 1200px) {
+    width:100vw;
+
+
+  }
 }
 
 .team-list {
@@ -25,13 +29,18 @@
   // justify-content: space-between;
   // gap: 30px;
 
-  @media screen and (min-width:768px) and (max-width:1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
   }
 
+         @media screen and (min-width:1200px) {
+          display: flex;
+          gap: 30px;
+          
+         }
 }
 
 .team-list__item {
@@ -41,14 +50,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen  and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
     margin-bottom: 30px;
   }
 }
 
 .team-list__item--last {
-  @media screen  and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 0;
   }
 }
@@ -56,8 +65,8 @@
 .team-container {
   padding: 30px 32px;
 
-  @media screen  and (max-width: 767px) {
-    padding: 30px  24px;
+  @media screen and (max-width: 767px) {
+    padding: 30px 24px;
   }
 }
 
@@ -68,7 +77,7 @@
   letter-spacing: 0.03em;
   text-align: center;
 
-  @media screen  and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin: 0;
     margin-bottom: 10px;
   }
