@@ -1,42 +1,142 @@
-.hero {
-  text-align: center;
-
+.hero{
+text-align: center;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/bgr.jpg);
-  background-color: $background-color;
-  background-position: center;
+      margin-left: auto;
+      margin-right: auto;
 
-  @media screen and (max-width: 767px) {
-    min-width: 480px;
-    height: 400px;
 
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+@media screen and (max-width: 767px) {
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url("../../img/bgr-mobile.jpg");
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    min-width: 768px;
-    max-width: 1199px;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    height: 400px;
-  }
+min-width: 480px;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 118px 0 118px 0;
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-      padding-bottom: 200px;
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../../img/bgr-mobile@2x.webp");
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../../img/bgr-mobile@2x.jpg");
+      
   }
 }
+
+
+
+@media screen and (min-width: 768px) {
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url("../../img/bgr-tablet.jpg");
+padding: 118px 0 118px 0;
+background-repeat: no-repeat;
+background-size: cover;
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../../img/bgr-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 118px 0 118px 0;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px){
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url("../../img/bgr.jpg");
+padding: 200px 0 200px 0;
+background-repeat: no-repeat;
+height: 600px;
+max-width: 100%;
+
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../../img/bgr@2x.jpg");
+  }
+}
+}
+
+// .hero {
+//   text-align: center;
+
+//   margin: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+//   // padding-top: 200px;
+//   // padding-bottom: 200px;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../img/bgr.jpg);
+//   background-color: $background-color;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+//   @media (min-device-pixel-ratio:2),
+//   (min-resolution: 192dpi)
+//    {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)), url('../../img/bgr@2x.jpg');
+       
+//   }
+
+  
+
+//   @media screen and (max-width: 767px) {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)), url('../../img/bgr-mobile.jpg');
+//           // background-color: $background-color;
+//           //   background-repeat: no-repeat;
+//           //   background-position: center;
+//           //   background-size: cover;
+//     min-width: 480px;
+//     height: 400px;
+
+//     padding-top: 118px;
+//     padding-bottom: 118px;
+    
+   
+//   }
+
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)), url('../../img/bgr-tablet.jpg');
+//           // background-color: $background-color;
+//           //   background-repeat: no-repeat;
+//           //   background-position: center;
+//           //   background-size: cover;
+//     // min-width: 768px;
+//     max-width: 1199px;
+//     height: 400px;
+//     padding-top: 118px;
+//     padding-bottom: 118px;
+    
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)),
+//         url(../img/bgr.jpg);
+//       // background-color: $background-color;
+//       // background-repeat: no-repeat;
+//       // background-position: center;
+//       // background-size: cover;
+//       min-width: 1200px;
+//     // max-width: 1600px;
+//     height: 600px;
+//     padding-top: 200px;
+//       padding-bottom: 200px;
+//   }
+// }
 
 .hero__title {
   color: $hero-text-color;

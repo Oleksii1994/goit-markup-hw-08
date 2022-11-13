@@ -270,11 +270,42 @@
           <h2 class="section-title title-centered">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                src="./img/img-5.jpg"
-                alt="Посміхаючийся чоловік з темною бородою в бордовій сорочці і в окулярах"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/designer-desktop.jpg    1x,
+                    ./img/designer-desktop@2x.jpg 2x
+                  "
+                  type="img/jpg"
+                  media="max-width:767px"
+                />
+                <source
+                  srcset="
+                    ./img/designer-desktop.jpg    1x,
+                    ./img/designer-desktop@2x.jpg 2x
+                  "
+                  type="img/jpg"
+                  media="max-width:1199px"
+                  src="./img/designer-tablet.jpg"
+                />
+
+                <source
+                  srcset="
+                    ./img/designer-desktop.jpg    1x,
+                    ./img/designer-desktop@2x.jpg 2x
+                  "
+                  type="img/jpg"
+                  media="min-width:1200px"
+                  src="./img/designer-desktop.jpg"
+                />
+
+                <img
+                  src="./img//designer-desktop.jpg"
+                  alt="Посміхаючийся чоловік з
+                темною бородою в бордовій сорочці і в окулярах"
+                  sizes="(min-width:1200px) 270px ,(min-width:768px) 374px, 100vw"
+                />
+              </picture>
               <div class="team-container">
                 <h3 class="team-container__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-container__job-title">
@@ -310,11 +341,24 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./img/img-2-2.jpg"
-                alt="Гарна білява дівчина одягнена в білу блузку, чорний жакет і в окулярах посміхається"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/frontend-desktop.jpg    1x,
+                    ./img/frontend-desktop@2x.jpg 2x
+                  "
+                  media="max-width:767px" />
+                <source
+                  srcset="
+                    ./img/frontend-desktop.jpg    1x,
+                    ./img/frontend-desktop@2x.jpg 2x
+                  "
+                  media="max-width:1199px" />
+                <img
+                  src="./img/frontend-desktop.jpg"
+                  alt="Гарна білява дівчина одягнена в білу блузку, чорний жакет і в окулярах посміхається"
+                  sizes="(min-width:1200px) 450px, (min-width:768px) 354px, 100vw"
+              /></picture>
               <div class="team-container">
                 <h3 class="team-container__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-container__job-title">
@@ -350,11 +394,24 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./img/img-3-2.jpg"
-                alt="Молодий чоловік з каштановим волоссям і щетиною, вдягнений у світлу сорочку посміхається і дивится вбік"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/marketing-desktop.jpg    1x,
+                    ./img/marketing-desktop@2x.jpg 2x
+                  "
+                  media="max-width:767px" />
+                <source
+                  srcset="
+                    ./img/marketing-desktop.jpg    1x,
+                    ./img/marketing-desktop@2x.jpg 2x
+                  "
+                  media="min-width:768px, max-width:1199px" />
+                <img
+                  src="./img/marketing-desktop.jpg"
+                  alt="Молодий чоловік з каштановим волоссям і щетиною, вдягнений у світлу сорочку посміхається і дивится вбік"
+                  sizes="(min-width:1200px) 450px, (min-width:768px) 50vw, 100vw"
+              /></picture>
               <div class="team-container">
                 <h3 class="team-container__title">Микола Тарасов</h3>
                 <p lang="en" class="team-container__job-title">Marketing</p>
@@ -388,11 +445,18 @@
             </li>
 
             <li class="team-list__item team-list__item--last">
-              <img
-                src="./img/img-4.jpg"
-                alt="чоловік в окулярах с темним волоссям і бородою, вдягнений в чорну футболку трохи посміхається"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./img/ui-desktop.jpg 1x, ./img/ui-desktop@2x.jpg 2x"
+                  media="max-width:767px" />
+                <source
+                  srcset="./img/ui-desktop.jpg 1x, ./img/ui-desktop@2x.jpg 2x"
+                  media="max-width:1199px" />
+                <img
+                  src="./img/ui-desktop.jpg"
+                  alt="чоловік в окулярах с темним волоссям і бородою, вдягнений в чорну футболку трохи посміхається"
+                  sizes="(min-width:1200px) 450px, (min-width:768px) 354px, 100vw"
+              /></picture>
               <div class="team-container">
                 <h3 class="team-container__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-container__job-title">UI Designer</p>
