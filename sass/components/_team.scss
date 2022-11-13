@@ -10,12 +10,17 @@
 .team-list {
   margin: 0;
   padding-left: 0;
-  // display: flex;
+  display: flex;
   // flex-wrap: wrap;
   // gap: 30px;
   // // flex-direction: row;
   // justify-content: space-between;
   // gap: 30px;
+
+  @media screen and (max-width:767px){
+    gap: 30px;
+      flex-direction: column;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
