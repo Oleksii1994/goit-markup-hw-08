@@ -34,13 +34,11 @@
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
 
-.checkbox-container__input:checked ~ & {
-visibility: visible;
-  opacity: 1;
+  .checkbox-container__input:checked ~ & {
+    visibility: visible;
+    opacity: 1;
+  }
 }
-}
-
-
 
 .checkbox-container__icon-empty {
   position: absolute;
@@ -56,10 +54,23 @@ visibility: visible;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: $text-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
 }
 
 .checkbox-container__link {
   color: $accent-color;
+
+  @media screen and (max-width: 1199px) {
+    font-weight: 400;
+font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+    
+  }
 }
 
 .btn-modal-container {
