@@ -1,15 +1,4 @@
-// .nav {
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//   }
-// }
 
-// .menu-btn-container {
-//   @media screen and (min-width:480px) and (max-width:767px){
-//   display: flex;
-
-//   }
-// }
 
 .main-nav {
   display: flex;
@@ -83,13 +72,7 @@
     display: none;
   }
 
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   gap: 51px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   gap: 51px;
-  // }
+  
 }
 
 .site-nav__link {
@@ -111,13 +94,7 @@
   }
 }
 
-// .site-nav__item {
-//   margin-right: 50px;
 
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
 
 .site-nav__item {
   margin: 0;
@@ -138,11 +115,4 @@
   background-color: $accent-color;
 }
 
-// .nav {
-//   display: flex;
-//   align-items: center;
 
-//   @media screen and (min-width:768px) and (max-width:1199px) {
-//     justify-content: space-between;
-//   }
-// }

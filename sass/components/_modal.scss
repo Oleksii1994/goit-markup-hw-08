@@ -11,16 +11,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media screen and (min-width:320px) {
-   min-width: auto;
+  @media screen and (min-width: 320px) {
+    min-width: auto;
     min-height: auto;
-    
-    
   }
 
-
-  @media screen and (max-width:1199px) {
-    width:450px;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
   }
 }
 
@@ -41,13 +38,11 @@
   transition-duration: $transition-dur;
   transition-timing-function: $cubic-bezier;
 
-&:hover,
+  &:hover,
   &:focus {
     fill: $accent-color;
   }
 }
-
-
 
 .modal__title {
   margin: 0;
@@ -59,9 +54,7 @@
   letter-spacing: 0.03em;
   color: $primary-text-color;
 
-  
-  
-    @media screen and (max-width:1199px) {
-      line-height: calc(30/20);
-    }
+  @media screen and (max-width: 1199px) {
+    line-height: calc(30 / 20);
+  }
 }
