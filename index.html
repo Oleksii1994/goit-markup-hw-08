@@ -270,40 +270,44 @@
           <h2 class="section-title title-centered">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <picture>
+              <!-- <picture>
                 <source
                   srcset="
-                    ./img/designer-desktop.jpg    1x,
-                    ./img/designer-desktop@2x.jpg 2x
+                    ./img/designer-desktop.jpg    270w,
+                    ./img/designer-desktop@2x.jpg 540w
                   "
-                  type="./img/jpg"
+                  type="img/jpg"
                   media="max-width:767px"
                 />
                 <source
                   srcset="
-                    ./img/designer-desktop.jpg    1x,
-                    ./img/designer-desktop@2x.jpg 2x
+                    ./img/designer-desktop.jpg    270w,
+                    ./img/designer-desktop@2x.jpg 540w
                   "
-                  type="./img/jpg"
-                  media="max-width:1199px"
+                  type="img/jpg"
+                  media="min-width:768px"
                 />
 
                 <source
                   srcset="
-                    ./img/designer-desktop.jpg    1x,
-                    ./img/designer-desktop@2x.jpg 2x
+                    ./img/designer-desktop.jpg    270w,
+                    ./img/designer-desktop@2x.jpg 540w
                   "
-                  type="./img/jpg"
+                  type="img/jpg"
                   media="min-width:1200px"
-                />
+                /> -->
 
-                <img
-                  src="./img/designer-desktop.jpg"
-                  alt="Посміхаючийся чоловік з
+              <img
+                srcset="
+                  ./img/designer-desktop.jpg    270w,
+                  ./img/designer-desktop@2x.jpg 540w
+                "
+                src="./img/designer-desktop.jpg"
+                alt="Посміхаючийся чоловік з
                 темною бородою в бордовій сорочці і в окулярах"
-                  sizes="(min-width:1200px) 270px ,(max-width:1199px) 354px, 100vw"
-                />
-              </picture>
+                sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw, 100vw"
+              />
+              <!-- </picture> -->
               <div class="team-container">
                 <h3 class="team-container__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-container__job-title">
@@ -339,8 +343,8 @@
             </li>
 
             <li class="team-list__item">
-              <picture>
-                <source
+              <!-- <picture> -->
+              <!-- <source
                   srcset="
                     ./img/frontend-desktop.jpg    1x,
                     ./img/frontend-desktop@2x.jpg 2x
@@ -353,12 +357,17 @@
                     ./img/frontend-desktop@2x.jpg 2x
                   "
                   type="img/jpg"
-                  media="max-width:1199px" />
-                <img
-                  src="./img/frontend-desktop.jpg"
-                  alt="Гарна білява дівчина одягнена в білу блузку, чорний жакет і в окулярах посміхається"
-                  sizes="(min-width:1200px) 450px, (min-width:768px) 354px, 100vw"
-              /></picture>
+                  media="max-width:1199px" /> -->
+              <img
+                srcset="
+                  ./img/frontend-desktop.jpg    270w,
+                  ./img/frontend-desktop@2x.jpg 540w
+                "
+                src="./img/frontend-desktop.jpg"
+                alt="Гарна білява дівчина одягнена в білу блузку, чорний жакет і в окулярах посміхається"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
+              />
+              <!-- </picture>  -->
               <div class="team-container">
                 <h3 class="team-container__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-container__job-title">
@@ -394,7 +403,7 @@
             </li>
 
             <li class="team-list__item">
-              <picture>
+              <!-- <picture>
                 <source
                   srcset="
                     ./img/marketing-desktop.jpg    1x,
@@ -408,12 +417,17 @@
                     ./img/marketing-desktop@2x.jpg 2x
                   "
                   type="img/jpg"
-                  media="min-width:768px, max-width:1199px" />
-                <img
-                  src="./img/marketing-desktop.jpg"
-                  alt="Молодий чоловік з каштановим волоссям і щетиною, вдягнений у світлу сорочку посміхається і дивится вбік"
-                  sizes="(min-width:1200px) 450px, (min-width:768px) 50vw, 100vw"
-              /></picture>
+                  media="min-width:768px, max-width:1199px" /> -->
+              <img
+                srcset="
+                  ./img/marketing-desktop.jpg    270w,
+                  ./img/marketing-desktop@2x.jpg 540w
+                "
+                src="./img/marketing-desktop.jpg"
+                alt="Молодий чоловік з каштановим волоссям і щетиною, вдягнений у світлу сорочку посміхається і дивится вбік"
+                sizes="(min-width:1200px) 450px, (min-width:768px) 50vw, 100vw"
+              />
+              <!-- </picture> -->
               <div class="team-container">
                 <h3 class="team-container__title">Микола Тарасов</h3>
                 <p lang="en" class="team-container__job-title">Marketing</p>
@@ -447,7 +461,7 @@
             </li>
 
             <li class="team-list__item team-list__item--last">
-              <picture>
+              <!-- <picture>
                 <source
                   srcset="./img/ui-desktop.jpg 1x, ./img/ui-desktop@2x.jpg 2x"
                   type="img/jpg"
@@ -455,12 +469,15 @@
                 <source
                   srcset="./img/ui-desktop.jpg 1x, ./img/ui-desktop@2x.jpg 2x"
                   type="img/jpg"
-                  media="max-width:1199px" />
-                <img
-                  src="./img/ui-desktop.jpg"
-                  alt="чоловік в окулярах с темним волоссям і бородою, вдягнений в чорну футболку трохи посміхається"
-                  sizes="(min-width:1200px) 450px, (min-width:768px) 354px, 100vw"
-              /></picture>
+                  media="max-width:1199px" /> -->
+              <img
+                srcset="./img/ui-desktop.jpg 270w, ./img/ui-desktop@2x.jpg 540w"
+                src="./img/ui-desktop.jpg"
+                alt="чоловік в окулярах с темним волоссям і бородою, вдягнений в чорну футболку трохи посміхається"
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
+                class="img-team"
+              />
+              <!-- </picture> -->
               <div class="team-container">
                 <h3 class="team-container__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-container__job-title">UI Designer</p>

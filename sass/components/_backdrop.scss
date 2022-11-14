@@ -1,4 +1,5 @@
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   background-color: $backdrop;
   top: 0;

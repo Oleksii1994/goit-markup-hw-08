@@ -17,9 +17,9 @@
   // justify-content: space-between;
   // gap: 30px;
 
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 767px) {
     gap: 30px;
-      flex-direction: column;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -37,22 +37,19 @@
 
 .team-list__item {
   background-color: $body-bgr-color;
-  width: 270px;
+  min-width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (max-width: 767px) {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
     margin-bottom: 0;
   }
 
-
-
-
-  @media screen and (min-width: 768px) and (max-width:1199px){
-    width: 354px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
   }
 }
 
