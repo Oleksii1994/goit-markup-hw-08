@@ -1,4 +1,5 @@
 .hero {
+  width:100%;
   text-align: center;
   margin: 0;
   margin-left: auto;
@@ -12,7 +13,7 @@
       ),
       url("../img/bgr-mobile.jpg");
 
-    min-width: 480px;
+    width: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 118px 0 118px 0;

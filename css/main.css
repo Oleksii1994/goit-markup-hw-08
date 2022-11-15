@@ -45,12 +45,13 @@ img {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -705,6 +706,7 @@ img {
 }
 
 .hero {
+  width: 100%;
   text-align: center;
   margin: 0;
   margin-left: auto;
@@ -715,7 +717,7 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/bgr-mobile.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bgr-mobile.jpg");
-    min-width: 480px;
+    width: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 118px 0 118px 0;
@@ -1533,17 +1535,6 @@ img {
   color: #ffffff;
 }
 
-.nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 302px;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -1587,6 +1578,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 36px;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
@@ -1623,6 +1615,7 @@ img {
 
 .menu-nav {
   margin: 0;
+  margin-bottom: auto;
   padding: 0;
 }
 
@@ -1653,7 +1646,7 @@ img {
 
 .contacts-menu {
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   padding: 0;
 }
 
