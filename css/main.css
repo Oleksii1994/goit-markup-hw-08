@@ -844,10 +844,7 @@ img {
 
 .modal {
   position: fixed;
-  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
   padding: 40px;
@@ -858,6 +855,9 @@ img {
 }
 @media screen and (min-width: 320px) {
   .modal {
+    top: 20px;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
     min-width: auto;
     min-height: auto;
   }
@@ -865,6 +865,13 @@ img {
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -1458,33 +1465,24 @@ img {
 }
 
 .team-container__title {
+  margin: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  .team-container__title {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-}
 
 .team-container__job-title {
+  margin: 0;
+  margin-bottom: 16px;
   color: #757575;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 28px;
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .team-container__job-title {
-    margin-bottom: 16px;
-  }
 }
 
 .work {
