@@ -247,6 +247,14 @@ img {
   fill: currentColor;
 }
 
+.clients {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 480px;
+  height: auto;
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +295,12 @@ img {
   fill: #2196f3;
   border-color: #2196f3;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
+  .clients-list__link {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 480px) {
   .clients-list__link {
     width: 210px;
   }
@@ -1533,6 +1546,23 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.backdrop-mobile {
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .backdrop-mobile {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .menu-toggle {
