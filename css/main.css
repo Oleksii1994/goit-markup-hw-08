@@ -746,6 +746,7 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/bgr-tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bgr-tablet.jpg");
+    max-width: 768px;
     padding: 118px 0 118px 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -763,8 +764,8 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bgr.jpg");
     padding: 200px 0 200px 0;
     background-repeat: no-repeat;
-    height: 600px;
-    max-width: 100%;
+    height: auto;
+    max-width: 1600px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px) {
