@@ -3,17 +3,19 @@
   margin-bottom: 50px;
   padding: 0;
   display: flex;
-  flex-direction: row;
+  gap: 8px;
   justify-content: center;
-}
 
-.button-list__item {
-  margin-right: 8px;
 
-  &:last-child {
-    margin-right: 0;
+  @media screen and (max-width:767px) {
+    flex-wrap: wrap;
+    
   }
+
 }
+
+
+
 
 .button-list__button {
   cursor: pointer;
